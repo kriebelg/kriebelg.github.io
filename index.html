@@ -45,6 +45,13 @@
   .role { margin: 2px 0 8px; color: #c23b6e; font-style: italic; font-size: 0.95rem; }
   .item p:last-child { margin: 0; }
 
+  /* club name + icons */
+  .club-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .icons { display: flex; gap: 6px; }
+  .icons a { display: inline-flex; color: #c23b6e; opacity: 0.8; transition: opacity .15s, transform .15s; }
+  .icons a:hover { opacity: 1; transform: translateY(-1px); }
+  .icons svg { width: 18px; height: 18px; }
+
   /* stack on phones */
   @media (max-width: 600px) {
     .columns { flex-direction: column; }
@@ -78,21 +85,51 @@
   <h2>On Campus</h2>
 
   <div class="item">
-    <h3>UofT Crochet Collective</h3>
+    <div class="club-head">
+      <h3>UofT Crochet Collective</h3>
+      <span class="icons">
+        <a href="https://www.instagram.com/uoftcrochetclub/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="https://sop.utoronto.ca/group/the-crochet-collective-at-the-university-of-toronto-ccut/" target="_blank" rel="noopener" aria-label="Website">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20z"/></svg>
+        </a>
+      </span>
+    </div>
     <p class="role">Founder &amp; President</p>
-    <p> I created a club where students have the opportunity to learn how to crochet from experienced crocheters (like myself), and are given a space to take a break from studying, relax, and socialize. They also have the opportunity to donate finished projects!.</p>
+    <p>I created a club where students have the opportunity to learn how to crochet from experienced crocheters (like myself), and are given a space to take a break from studying, relax, and socialize. They also have the opportunity to donate finished projects!</p>
   </div>
 
   <div class="item">
-    <h3>UofT Matcha Club</h3>
+    <div class="club-head">
+      <h3>UofT Matcha Club</h3>
+      <span class="icons">
+        <a href="https://www.instagram.com/uoftmatchaclub/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="https://sop.utoronto.ca/group/university-of-toronto-matcha-club-ut-cha/" target="_blank" rel="noopener" aria-label="Website">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20z"/></svg>
+        </a>
+      </span>
+    </div>
     <p class="role">Co-Founder &amp; Vice President</p>
-    <p>The UofT Matcha Club is a community of matcha-loving students to meet and enjoy the drink together through a variety of fun events. We recently had our first event, which was a matcha tasting event!.</p>
+    <p>The UofT Matcha Club is a community of matcha-loving students to meet and enjoy the drink together through a variety of fun events. We recently had our first event, which was a matcha tasting event!</p>
   </div>
 
   <div class="item">
-    <h3>UofT Robotics Association</h3>
+    <div class="club-head">
+      <h3>UofT Robotics Association</h3>
+      <span class="icons">
+        <a href="https://www.instagram.com/utra_uoft/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="https://utra.ca/" target="_blank" rel="noopener" aria-label="Website">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20z"/></svg>
+        </a>
+      </span>
+    </div>
     <p class="role">Web Developer</p>
-    <p> At the UTRA, I help manage the website and update it frequently.</p>
+    <p>At UTRA, I help manage the website and update it frequently.</p>
   </div>
 </div>
 </div>
