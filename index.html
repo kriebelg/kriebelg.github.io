@@ -7,7 +7,7 @@
 <style>
   html { min-height: 100%; background: linear-gradient(180deg, #fff5f8 0%, #ffd6e4 55%, #f7a8c4 100%) fixed; }
   body {
-    max-width: 640px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 48px 16px 64px;
     font-family: Georgia, serif;
@@ -19,11 +19,15 @@
   h2 { margin-top: 0; }
   .headshot { width: 100%; max-width: 400px; display: block; margin: 24px 0; border-radius: 12px; }
 
+  .columns { display: flex; gap: 40px; align-items: flex-start; flex-wrap: wrap; }
+  .left { flex: 1 1 320px; }
+  .right { flex: 1.3 1 360px; }
+  .headshot { max-width: 100%; }
+
   .card {
     background: rgba(255, 255, 255, 0.8);
     border-radius: 16px;
     padding: 24px 28px;
-    margin-top: 40px;
     box-shadow: 0 4px 20px rgba(194, 59, 110, 0.12);
   }
   .item { padding: 16px 0; border-top: 1px solid #f3cfdc; }
@@ -37,6 +41,8 @@
 
 <h1>Hello, I'm Georgia!</h1>
 
+<div class="columns">
+<div class="left">
 <img class="headshot" src="georgiak.jpeg" alt="Georgia Kriebel">
 
 <p>Computer Science &amp; Physics, University of Toronto, 2028</p>
@@ -47,7 +53,9 @@
   <a href="https://www.linkedin.com/in/georgia-kriebel/">LinkedIn</a> ·
   <a href="mailto:35kriebelg@gmail.com">Email</a>
 </p>
+</div>
 
+<div class="right">
 <div class="card">
   <h2>On Campus</h2>
 
@@ -80,6 +88,8 @@
     <p class="role">Volunteer</p>
     <p>Write about this here.</p>
   </div>
+</div>
+</div>
 </div>
 
 </body>
