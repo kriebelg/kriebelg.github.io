@@ -38,6 +38,7 @@
     border-radius: 16px;
     padding: 24px 28px;
     box-shadow: 0 4px 20px rgba(194, 59, 110, 0.12);
+    margin-bottom: 32px;
   }
   .item { padding: 16px 0; border-top: 1px solid #f3cfdc; }
   .item:first-of-type { border-top: none; padding-top: 4px; }
@@ -52,10 +53,31 @@
   .icons a:hover { opacity: 1; transform: translateY(-1px); }
   .icons svg { width: 18px; height: 18px; }
 
+  /* Off campus photo grid */
+  .off-campus-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .off-photo {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 10px rgba(194, 59, 110, 0.12);
+    transition: transform 0.2s ease;
+  }
+  .off-photo:hover {
+    transform: scale(1.02);
+  }
+
   /* stack on phones */
   @media (max-width: 600px) {
     .columns { flex-direction: column; }
     .left { flex-basis: auto; width: 100%; }
+    .off-campus-grid { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -68,7 +90,7 @@
 <p>I’m a CS and Physics student who likes building a little bit of everything, from full-stack apps with real users to graph algorithms and API-powered tools. Lately I’ve gotten really into computer graphics, and I’m working on a project with UofT’s Dynamic Graphics Project lab. Outside of class I love tapping into my creative side. Sewing, crocheting, and cooking are some of my favorite ways to pass the time.</p>
 <p>
   <a href="projects.html">Projects</a> ·
-  <a href="Resume%20(1).pdf">Resume</a> ·
+  <a href="Resume_without_GPA.pdf">Resume</a> ·
   <a href="https://github.com/kriebelg">GitHub</a> ·
   <a href="https://www.linkedin.com/in/georgia-kriebel/">LinkedIn</a> ·
   <a href="mailto:35kriebelg@gmail.com">Email</a>
@@ -83,7 +105,23 @@
 <div class="right">
 <div class="card">
   <h2>On Campus</h2>
-
+  
+  <div class="item">
+    <div class="club-head">
+      <h3>UofT Robotics Association</h3>
+      <span class="icons">
+        <a href="https://www.instagram.com/utra_uoft/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+        </a>
+        <a href="https://utra.ca/" target="_blank" rel="noopener" aria-label="Website">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20z"/></svg>
+        </a>
+      </span>
+    </div>
+    <p class="role">Web Developer</p>
+    <p>Contributing to frontend updates and maintaining the association's web platforms to keep members connected with ongoing robotics projects and events.</p>
+  </div>
+  
   <div class="item">
     <div class="club-head">
       <h3>UofT Crochet Collective</h3>
@@ -97,7 +135,7 @@
       </span>
     </div>
     <p class="role">Founder &amp; President</p>
-    <p>I created a club where students have the opportunity to learn how to crochet from experienced crocheters (like myself), and are given a space to take a break from studying, relax, and socialize. They also have the opportunity to donate finished projects!</p>
+    <p>Founded a welcoming craft community offering study breaks, collaborative maker sessions, and peer-to-peer workshops where members can learn fiber arts and coordinate charity project donations.</p>
   </div>
 
   <div class="item">
@@ -113,25 +151,21 @@
       </span>
     </div>
     <p class="role">Co-Founder &amp; Vice President</p>
-    <p>The UofT Matcha Club is a community of matcha-loving students to meet and enjoy the drink together through a variety of fun events. We recently had our first event, which was a matcha tasting event!</p>
-  </div>
-
-  <div class="item">
-    <div class="club-head">
-      <h3>UofT Robotics Association</h3>
-      <span class="icons">
-        <a href="https://www.instagram.com/utra_uoft/" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
-        </a>
-        <a href="https://utra.ca/" target="_blank" rel="noopener" aria-label="Website">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20a15 15 0 0 1 0-20z"/></svg>
-        </a>
-      </span>
-    </div>
-    <p class="role">Web Developer</p>
-    <p>At UTRA, I help manage the website and update it frequently.</p>
+    <p>Brought together fellow matcha enthusiasts to build community through curated tastings, social gatherings, and casual campus events centered around our favorite drink.</p>
   </div>
 </div>
+
+<div class="card">
+  <h2>Off Campus</h2>
+  <p>A peek into what I'm up to away from lectures and code editors—from handmade crafts to cooking and creative projects.</p>
+  <div class="off-campus-grid">
+    <img class="off-photo" src="images/off1.jpg" alt="Off campus hobby 1">
+    <img class="off-photo" src="images/off2.jpg" alt="Off campus hobby 2">
+    <img class="off-photo" src="images/off3.jpg" alt="Off campus hobby 3">
+    <img class="off-photo" src="images/off4.jpg" alt="Off campus hobby 4">
+  </div>
+</div>
+
 </div>
 </div>
 
