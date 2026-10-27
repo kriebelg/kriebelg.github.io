@@ -7,16 +7,68 @@
 <style>
   html { min-height: 100%; background: linear-gradient(180deg, #fff5f8 0%, #ffd6e4 55%, #f7a8c4 100%) fixed; }
   body {
-    max-width: 640px;
+    max-width: 680px;
     margin: 0 auto;
     padding: 48px 16px 64px;
     font-family: Georgia, serif;
     line-height: 1.5;
     color: #222;
   }
-  a { color: #d14a7c; }
-  h2 { margin-top: 40px; }
-  .skills { color: #666; }
+  a { color: #d14a7c; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  h1 { margin-bottom: 32px; }
+  
+  /* Timeline Styling */
+  .timeline {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 24px;
+    border-left: 2px solid #f29bb8;
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 36px;
+  }
+  .timeline-item:last-child {
+    margin-bottom: 0;
+  }
+  /* Timeline dot */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -31px;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d14a7c;
+    border: 2px solid #fff5f8;
+  }
+  .timeline-date {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #b03261;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2px;
+  }
+  h3 {
+    margin: 0 0 4px 0;
+    font-size: 1.15rem;
+    color: #1a1a1a;
+  }
+  .skills {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0 0 8px 0;
+    font-style: italic;
+  }
+  .project-desc {
+    margin: 0 0 8px 0;
+  }
+  .project-links {
+    font-size: 0.9rem;
+  }
 </style>
 </head>
 <body>
@@ -25,29 +77,48 @@
 
 <h1>Projects</h1>
 
-<h2>Ranking Application</h2>
-<p class="skills">Python, React, Supabase</p>
-<p>Write about this project here.</p>
-<p><a href="https://github.com/kriebelg">Code</a></p>
+<div class="timeline">
 
-<h2>Hardware Supply Chain Optimizer</h2>
-<p class="skills">Python, React, Graph Algorithms</p>
-<p>Write about this project here.</p>
+  <div class="timeline-item">
+    <div class="timeline-date">June 2026 -- Present</div>
+    <h3>Ranking Application</h3>
+    <p class="skills">Python, React, Supabase</p>
+    <p class="project-desc">A full-stack ranking and comparison platform built as sole developer. Features a responsive React frontend, Python backend logic, and a robust Supabase database schema supporting active users with mobile app integration on the horizon.</p>
+    <div class="project-links"><a href="https://github.com/kriebelg">Code →</a></div>
+  </div>
 
-<h2>Rescue Pet Adoption Simulator</h2>
-<p class="skills">Java, Java Swing, Clean Architecture, Petfinder API</p>
-<p>Write about this project here.</p>
-<p><a href="https://github.com/kriebelg">Code</a></p>
+  <div class="timeline-item">
+    <div class="timeline-date">March 2026 -- Present</div>
+    <h3>Hardware Supply Chain Optimizer</h3>
+    <p class="skills">Python, React, Graph Algorithms</p>
+    <p class="project-desc">An early-stage startup platform that leverages graph algorithms and custom optimization engines to streamline complex manufacturing and hardware supply chain routing decisions.</p>
+  </div>
 
-<h2>Geospatial Itinerary Planner</h2>
-<p class="skills">Python, Node.js, Flask, Gemini API, OpenRoute Service API</p>
-<p>Write about this project here.</p>
-<p><a href="https://github.com/kriebelg">Code</a></p>
+  <div class="timeline-item">
+    <div class="timeline-date">Sep 2025 -- Dec 2025</div>
+    <h3>Rescue Pet Adoption Simulator</h3>
+    <p class="skills">Java, Java Swing, Clean Architecture, Petfinder API</p>
+    <p class="project-desc">An interactive Java Swing application promoting animal adoption through an immersive simulation powered by live data from the Petfinder API, engineered with Clean Architecture for high testability and scalability.</p>
+    <div class="project-links"><a href="https://github.com/kriebelg">Code →</a></div>
+  </div>
 
-<h2>Team Optimization Engine</h2>
-<p class="skills">Python, Pygame, Graph Theory</p>
-<p>Write about this project here.</p>
-<p><a href="https://github.com/kriebelg">Code</a></p>
+  <div class="timeline-item">
+    <div class="timeline-date">Oct 2025</div>
+    <h3>Geospatial Itinerary Planner</h3>
+    <p class="skills">Python, Node.js, Flask, Gemini API, OpenRoute Service API</p>
+    <p class="project-desc">An intelligent travel companion combining the Google Gemini API for personalized itinerary generation with the OpenRoute Service API to calculate optimal spatial routing and paths.</p>
+    <div class="project-links"><a href="https://github.com/kriebelg">Code →</a></div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-date">Feb 2025 -- April 2025</div>
+    <h3>Team Optimization Engine</h3>
+    <p class="skills">Python, Pygame, Graph Theory</p>
+    <p class="project-desc">A computational tool that uses graph theory and directed graph modeling to compute statistically ideal team compositions, complete with an interactive visual UI built using Pygame.</p>
+    <div class="project-links"><a href="https://github.com/kriebelg">Code →</a></div>
+  </div>
+
+</div>
 
 </body>
 </html>
