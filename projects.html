@@ -76,10 +76,27 @@
   }
   .project-links {
     font-size: 0.9rem;
+    margin-bottom: 12px;
   }
   .project-links a + a::before {
     content: " • ";
     color: #888;
+  }
+
+  /* Thumbnail Styling */
+  .project-thumb {
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #f29bb8;
+    box-shadow: 0 4px 12px rgba(209, 74, 124, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .project-thumb:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(209, 74, 124, 0.25);
   }
 </style>
 </head>
@@ -127,10 +144,13 @@
     <p class="skills">Python, Node.js, Flask, Gemini API, OpenRoute Service API</p>
     <p class="project-desc">An intelligent travel companion combining the Google Gemini API for personalized itinerary generation with the OpenRoute Service API to calculate optimal spatial routing and paths.</p>
     <div class="project-links">
-      <a href="https://devpost.com/software/daycation-i4uy79" target="_blank">Website</a>
+      <a href="https://devpost.com/software/daycation-i4uy79" target="_blank">Devpost</a>
       <a href="https://www.youtube.com/watch?v=oupWGklcqJA" target="_blank">YouTube</a>
       <a href="https://github.com/kriebelg" target="_blank">Code</a>
     </div>
+    <a href="https://www.youtube.com/watch?v=oupWGklcqJA" target="_blank">
+      <img src="https://img.youtube.com/vi/oupWGklcqJA/hqdefault.jpg" alt="Geospatial Itinerary Planner Video Thumbnail" class="project-thumb">
+    </a>
   </div>
 
   <div class="timeline-item">
@@ -139,10 +159,13 @@
     <p class="skills">Python, Node.js, Flask, Gemini API, OpenRoute Service API</p>
     <p class="project-desc">A group study game that can take in large amounts of study material to provide students both long-answer and multiple-choice questions. Students get immediate feedback and can even see their friends' study strengths and weaknesses.</p>
     <div class="project-links">
-      <a href="https://devpost.com/software/studyboss" target="_blank">Website</a>
+      <a href="https://devpost.com/software/studyboss" target="_blank">Devpost</a>
       <a href="https://www.youtube.com/watch?v=SzXARgzF-gg" target="_blank">YouTube</a>
       <a href="https://github.com/kriebelg" target="_blank">Code</a>
     </div>
+    <a href="https://www.youtube.com/watch?v=SzXARgzF-gg" target="_blank">
+      <img src="https://img.youtube.com/vi/SzXARgzF-gg/hqdefault.jpg" alt="Group Learning Game Video Thumbnail" class="project-thumb">
+    </a>
   </div>
 
 </div>
@@ -157,9 +180,11 @@
     <p class="skills">Java, Java Swing, Clean Architecture, Petfinder API</p>
     <p class="project-desc">An interactive Java Swing application promoting animal adoption through an immersive simulation powered by live data from the Petfinder API, engineered with Clean Architecture for high testability and scalability.</p>
     <div class="project-links">
-      <a href="https://youtube.com" target="_blank">YouTube</a>
       <a href="https://github.com/kriebelg" target="_blank">Code</a>
     </div>
+    <a href="images/pet-simulator.png" target="_blank">
+      <img src="images/pet-simulator.png" alt="Rescue Pet Adoption Simulator Screenshot" class="project-thumb">
+    </a>
   </div>
 
   <div class="timeline-item">
@@ -168,9 +193,11 @@
     <p class="skills">Python, Pygame, Graph Theory</p>
     <p class="project-desc">A computational tool that uses graph theory and directed graph modeling to compute statistically ideal team compositions, complete with an interactive visual UI built using Pygame.</p>
     <div class="project-links">
-      <a href="https://youtube.com" target="_blank">YouTube</a>
       <a href="https://github.com/kriebelg" target="_blank">Code</a>
     </div>
+    <a href="images/team-optimizer.png" target="_blank">
+      <img src="images/team-optimizer.png" alt="Team Optimization Engine Screenshot" class="project-thumb">
+    </a>
   </div>
 
 </div>
